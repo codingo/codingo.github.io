@@ -141,6 +141,14 @@ Great! We now have what we need in a variable. Referring back to our formula abo
 
 ![Impossible Math Formula]({{ site.url }}/assets/2017-03-08-Impossible-Math-Writeup/VerboseVariables.png)
 
+This will look like the following (note that we cast our regular expressions back to integers to prevent operand exceptions):
+
+{% highlight python %}
+multiplier = int(match.group(1))
+destination = int(match.group(2))
+overflow = int((2**32+destination) / multiplier)
+{% endhighlight %}
+
 I hope this helped you to better understand integer overflows. If you're Brisbane based, or find yourself here be sure to check out [SecTalks][sectalks].
 
 [sectalks]: https://www.meetup.com/en-AU/SecTalks-Brisbane/
