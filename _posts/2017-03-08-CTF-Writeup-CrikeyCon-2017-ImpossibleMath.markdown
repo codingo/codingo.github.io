@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "CrikeyCon 2017 - Impossible Math Writeup"
+title:  "Understanding Integer Overflows - CrikeyCon 2017 - Impossible Math Writeup"
 date:   2017-03-08 17:10:58 +1000
 categories: ctf writeup programming
 ---
@@ -206,6 +206,7 @@ if __name__ == '__main__':
 
 ![Impossible Math Flag]({{ site.url }}/assets/2017-03-08-Impossible-Math-Writeup/flag.png)
 
+Success!
 
 I hope this helped you to better understand integer overflows. If you're Brisbane based, or find yourself here be sure to check out [SecTalks][sectalks].
 
