@@ -5,10 +5,10 @@ date:   2017-03-08 17:01:58 +1000
 categories: ctf writeup programming crikeycon
 ---
 ```
-**Category:** Coding
-**Points:** 300
-**Solves:** 14
-**Description:**  crikeyconctf.dook.biz:23776
+Category: Coding
+Points: 300
+Solves: 14
+Description:  crikeyconctf.dook.biz:23776
 ```
 
 # Enumeration
@@ -103,3 +103,12 @@ Eventually I identified that the response to an answer was:
 AnswerProvided is correct
 AnswerProvided = AnswerProvided
 ```
+
+And then the next question would be presented. This was causing issues with my regex as I was passing values from the previous answer into my group, ultimately preventing the correct evaluation from sending.
+
+I resolved this by continuing back to the beginning of my loop if there wasn’t a mathematical operator in my decoded string, putting this after the sentinel check as I didn’t want to miss my flag (which likely wouldn’t contain an operator). This looked like the following:
+
+{% highlight python %}
+if not re.search('[-+/*]', decoded):
+    continue
+{% endhighlight %} 
