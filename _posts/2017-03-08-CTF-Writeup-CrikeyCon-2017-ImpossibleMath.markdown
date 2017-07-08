@@ -74,6 +74,17 @@ Under some circumstances, we would then be able to pipe our answer into a new nc
 
 ![Impossible Math First Flag]({{ site.url }}/assets/2017-03-08-Impossible-Math-Writeup/FirstFlag.png)
 
+Success! Our flag was revealed.
+
+# Creating an automatic answer tool
+Manual answers are great, but this is classified as a coding challenge, not a mathematical one!
+
+There are a few core processes to this part of the exercise. First is forming an open connection and identifying our destination and multiplier from the data that comes back. We’ve also been asked in the banner of our connection to limit our calculations to 4 bytes, so we’ll make sure we limit what we request at a time.
+
+Splitting our variables out of the calculation is quite easy. They’re both present on the line reflected as:
+
+![Impossible Math Second Check]({{ site.url }}/assets/2017-03-08-Impossible-Math-Writeup/SecondCheck.png)
+
 
 
 I hope this helped you to better understand integer overflows. If you're Brisbane based, or find yourself here be sure to check out [SecTalks][sectalks]
