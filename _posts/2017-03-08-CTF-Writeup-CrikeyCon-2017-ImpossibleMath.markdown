@@ -70,6 +70,10 @@ This generated the answer of 536875645 as follows:
 
 ![Impossible Math First Answer]({{ site.url }}/assets/2017-03-08-Impossible-Math-Writeup/FirstAnswer.png)
 
+Under some circumstances, we would then be able to pipe our answer into a new ncat session but since our variables change on each connection we need to do this manually to verify it’s correct:
+
+![Impossible Math First Flag]({{ site.url }}/assets/2017-03-08-Impossible-Math-Writeup/FirstFlag.png)
+
 
 
 I hope this helped you to better understand integer overflows. If you're Brisbane based, or find yourself here be sure to check out [SecTalks][sectalks]
