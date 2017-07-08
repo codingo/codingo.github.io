@@ -139,6 +139,10 @@ I hope this helped you to better understand integer overflows. If you're Brisban
 
 ![Impossible Math Boilerplate Execution]({{ site.url }}/assets/2017-03-08-Impossible-Math-Writeup/BoilerPlateExec.png)
 
+Great! We now have what we need in a variable. Referring back to our formula above, we now need to calculate:
+
+![Impossible Math Formula]({{ site.url }}/assets/2017-03-08-Impossible-Math-Writeup/VerboseVariables.png)
+
 
 
 [sectalks]: https://www.meetup.com/en-AU/SecTalks-Brisbane/
