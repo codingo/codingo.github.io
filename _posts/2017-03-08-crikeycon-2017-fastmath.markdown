@@ -92,3 +92,5 @@ The response to this was the following:
 
  ![FastMath Regex First Attempt]({{ site.url }}/assets/2017-03-08-FastMath-Writeup/FirstRegexResponse.png)
 
+I spent far more time on this part of the challenge than I care to admit. I didn’t entirely read my logs and spent my time stuck on the two lines where I have Sending `1766845` and the response `459060` is _not correct_ and put a lot of focus into trying to identify why a different response was being sent to what was calculated (not the truth, but it’s what I was thinking).
+
