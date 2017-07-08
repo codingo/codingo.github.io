@@ -29,7 +29,7 @@ The same result. I now had to identify the figure we wrap around. These numbers 
 
 We can use the following to identify our overflow point:
 
-![Impossible Math Manageable Numbers]({{ site.url }}/assets/2017-03-08-Impossible-Math-Writeup/OerflowFormula.png)
+![Impossible Math Manageable Numbers]({{ site.url }}/assets/2017-03-08-Impossible-Math-Writeup/OverflowFormula.png)
 
 4294967296 is exactly 2^32, which is 1 beyond the maximum supported by unsigned int (32 bits), further supporting our case that this is an integer overflow exercise.
 
