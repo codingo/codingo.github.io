@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Understanding Integer Overflows - CrikeyCon 2017 - Impossible Math Writeup"
+title:  "Understanding Integer Overflows - CrikeyCon 2017, Impossible Math Writeup"
 date:   2017-03-08 17:10:58 +1000
 categories: ctf writeup programming
 ---
