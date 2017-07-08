@@ -50,7 +50,7 @@ Since our number wraparounds we now know we need a number with the following con
 
 As a reminder, we can calculate our overflow using the formula from earlier	:
 
-![Impossible Math Formula]({{ site.url }}/assets/2017-03-08-Impossible-Math-Writeup/VariablesVerbose.png)
+![Impossible Math Formula]({{ site.url }}/assets/2017-03-08-Impossible-Math-Writeup/VerboseVariables.png)
 
 
 
