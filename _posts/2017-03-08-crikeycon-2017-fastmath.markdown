@@ -132,7 +132,7 @@ Essentially the same as above, but it would now capture two digits over one as I
 # Flag Reveal
 After making the changes above and letting the bot run for fifty questions I was then rewarded with the flag (redacted):
 
-!![FastMath Flag Reveal]({{ site.url }}/assets/2017-03-08-FastMath-Writeup/flag.png)
+![FastMath Flag Reveal]({{ site.url }}/assets/2017-03-08-FastMath-Writeup/flag.png)
 
 Success!
 
