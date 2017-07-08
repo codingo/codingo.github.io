@@ -37,7 +37,14 @@ To validate this, I should be able to pass this value to any problem and receive
 
 ![Impossible Math Manageable Numbers]({{ site.url }}/assets/2017-03-08-Impossible-Math-Writeup/ZeroTest.png)
 
+For the remainder of this exercise I’m going to refer to the variables from our second-last screenshot as the following:
 
+![Impossible Math Manageable Numbers]({{ site.url }}/assets/2017-03-08-Impossible-Math-Writeup/Variables.png)
+
+Since our number wraparounds we now know we need a number with the following conditions:
+
+* Our overflow must be lower than 4294967296 but higher than our destination to pass the first condition.
+* Our overflow needs to exceed 4294967296 when multiplied by the multiplier and result in the destination
 
 {% highlight ruby %}
 def print_hi(name)
