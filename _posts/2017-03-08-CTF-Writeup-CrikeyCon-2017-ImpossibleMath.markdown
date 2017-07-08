@@ -4,7 +4,7 @@ title:  "CrikeyCon 2017 - Impossible Math Writeup"
 date:   2017-03-08 17:10:58 +1000
 categories: ctf writeup programming
 ---
-```***Category:*** Coding
+```Category: Coding
 Points: 400
 Solves: 7
 Description:  ctf.crikeycon.com:43981```
