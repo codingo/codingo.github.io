@@ -77,6 +77,7 @@ if __name__ == '__main__':
         data = str(result).encode('utf-8') + b'\n'
         print('Sending: ' + str(result))
         client.send(data)
+
 {% endhighlight %}
 
 # Regular Expression (attempt)
