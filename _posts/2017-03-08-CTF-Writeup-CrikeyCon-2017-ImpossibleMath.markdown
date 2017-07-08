@@ -12,7 +12,7 @@ Description:  ctf.crikeycon.com:43981```
 # Enumeration
 Before doing anything else on the host since we were provided with an unual port and address I attempted to ncat to it, receiving the following:
 
-
+![Impossible Math Preview]({{ site.url }}/assets/2017-03-08-Impossible-Math-Writeup/ImpossibleMath-Preview.png)
 
 
 {% highlight ruby %}
