@@ -66,7 +66,14 @@ To generate our answer, I used the following:
 python -c 'print((2**32+destination)/multiplier)'
 {% endhighlight %}
 
-If you're Brisbane based, or find yourself here be sure to check out [SecTalks][sectalks]
+This generated the answer of 536875645 as follows:
+
+![Impossible Math First Answer]({{ site.url }}/assets/2017-03-08-Impossible-Math-Writeup/FirstAnswer.png)
+
+
+
+I hope this helped you to better understand integer overflows. If you're Brisbane based, or find yourself here be sure to check out [SecTalks][sectalks]
+
 
 
 [sectalks]: https://www.meetup.com/en-AU/SecTalks-Brisbane/
