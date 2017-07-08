@@ -4,10 +4,12 @@ title:  "CrikeyCon 2017 - Fast Math Writeup"
 date:   2017-03-08 17:01:58 +1000
 categories: ctf writeup programming crikeycon
 ---
-```Category: Coding
-Points: 300
-Solves: 14
-Description:  crikeyconctf.dook.biz:23776```
+```
+**Category:** Coding
+**Points:** 300
+**Solves:** 14
+**Description:**  crikeyconctf.dook.biz:23776
+```
 
 # Enumeration
 Before doing anything else on this host I attempted to connect to it, receiving the following:
