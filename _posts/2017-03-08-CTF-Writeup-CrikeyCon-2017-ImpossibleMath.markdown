@@ -48,7 +48,7 @@ Since our number wraparounds we now know we need a number with the following con
 
 # Calculating the correct overflow
 
-As a reminder, we can calculate our overflow using the formula from earlier	:
+As a reminder, we can calculate our overflow using the formula from earlier:
 
 ![Impossible Math Formula]({{ site.url }}/assets/2017-03-08-Impossible-Math-Writeup/VerboseVariables.png)
 
