@@ -31,6 +31,12 @@ We can use the following to identify our overflow point:
 
 ![Impossible Math Manageable Numbers]({{ site.url }}/assets/2017-03-08-Impossible-Math-Writeup/OerflowFormula.png)
 
+4294967296 is exactly 2^32, which is 1 beyond the maximum supported by unsigned int (32 bits), further supporting our case that this is an integer overflow exercise.
+
+To validate this, I should be able to pass this value to any problem and receive 0 back as a response (as it will reach the signed amount and loop back once), as follows:
+
+![Impossible Math Manageable Numbers]({{ site.url }}/assets/2017-03-08-Impossible-Math-Writeup/ZeroTest.png)
+
 
 
 {% highlight ruby %}
