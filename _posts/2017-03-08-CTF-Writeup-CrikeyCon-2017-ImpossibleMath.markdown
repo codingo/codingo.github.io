@@ -46,6 +46,14 @@ Since our number wraparounds we now know we need a number with the following con
 * Our overflow must be lower than 4294967296 but higher than our destination to pass the first condition.
 * Our overflow needs to exceed 4294967296 when multiplied by the multiplier and result in the destination
 
+# Calculating the correct overflow
+
+As a reminder, we can calculate our overflow using the formula from earlier	:
+
+![Impossible Math Formula]({{ site.url }}/assets/2017-03-08-Impossible-Math-Writeup/VariablesVerbose.png)
+
+
+
 {% highlight ruby %}
 def print_hi(name)
   puts "Hi, #{name}"
