@@ -137,6 +137,8 @@ if __name__ == '__main__':
 
 I hope this helped you to better understand integer overflows. If you're Brisbane based, or find yourself here be sure to check out [SecTalks][sectalks].
 
+![Impossible Math Boilerplate Execution]({{ site.url }}/assets/2017-03-08-Impossible-Math-Writeup/BoilerPlateExec.png)
+
 
 
 [sectalks]: https://www.meetup.com/en-AU/SecTalks-Brisbane/
