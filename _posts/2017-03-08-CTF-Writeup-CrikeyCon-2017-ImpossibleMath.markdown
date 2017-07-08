@@ -52,6 +52,13 @@ As a reminder, we can calculate our overflow using the formula from earlier	:
 
 ![Impossible Math Formula]({{ site.url }}/assets/2017-03-08-Impossible-Math-Writeup/VerboseVariables.png)
 
+I turned this into a proof of concept by generating a new ncat session, which asked the following:
+
+{% highlight text %}
+Solve for X, where:
+X > 37864
+X * 8 = 37864
+{% endhighlight %}
 
 
 {% highlight ruby %}
