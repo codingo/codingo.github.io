@@ -120,3 +120,22 @@ This got me to question number 10 – at which point I realized that my regex fr
 {% highlight python %}
 match = re.search('[^\:\s]\d+.{3}\d+', decoded)
 {% endhighlight %}
+
+Would only work if I were to be presented with a single digit question. I updated this to the following:
+
+{% highlight python %}
+match = re.search('[^\:\s]\d+\d+.{3}\d+', decoded)
+{% endhighlight %}
+
+Essentially the same as above, but it would now capture two digits over one as I didn’t expect the challenges to go past 99 (although could use \d* if they were to).
+
+# Flag Reveal
+After making the changes above and letting the bot run for fifty questions I was then rewarded with the flag (redacted):
+
+!![FastMath Flag Reveal]({{ site.url }}/assets/2017-03-08-FastMath-Writeup/flag.png)
+
+Success!
+
+I hope this helped you to better understand how to approach this kind of programming based ctf item. If you're Brisbane based, or find yourself here be sure to check out [SecTalks][sectalks].
+
+[sectalks]: https://www.meetup.com/en-AU/SecTalks-Brisbane/
