@@ -14,6 +14,11 @@ Before doing anything else on the host since we were provided with an unual port
 
 ![Impossible Math Preview]({{ site.url }}/assets/2017-03-08-Impossible-Math-Writeup/ImpossibleMath-Preview.png)
 
+# Identifying the core problem
+Since the math is impossible there’s likely a trick here. With that in mind I figure we need to overload an operator (integer overflow) and try passing a large number as input:
+![Impossible Math Overflow Check]({{ site.url }}/assets/2017-03-08-Impossible-Math-Writeup/OverflowCheck.png)
+
+
 
 {% highlight ruby %}
 def print_hi(name)
