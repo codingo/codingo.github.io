@@ -27,6 +27,10 @@ The same result. I now had to identify the figure we wrap around. These numbers 
 
 ![Impossible Math Manageable Numbers]({{ site.url }}/assets/2017-03-08-Impossible-Math-Writeup/ManageableNumbers.png)
 
+We can use the following to identify our overflow point:
+
+![Impossible Math Manageable Numbers]({{ site.url }}/assets/2017-03-08-Impossible-Math-Writeup/OerflowFormula.png)
+
 
 
 {% highlight ruby %}
