@@ -9,6 +9,11 @@ Points: 400
 Solves: 7
 Description:  ctf.crikeycon.com:43981```
 
+# Enumeration
+Before doing anything else on this host I attempted to ncat to it, receiving the following:
+
+
+
 
 {% highlight ruby %}
 def print_hi(name)
