@@ -60,17 +60,13 @@ X > 37864
 X * 8 = 37864
 {% endhighlight %}
 
+To generate our answer, I used the following:
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
+{% highlight python %}
+python -c 'print((2**32+destination)/multiplier)'
 {% endhighlight %}
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+If you're Brisbane based, or find yourself here be sure to check out [SecTalks][sectalks]
 
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+
+[sectalks]: https://www.meetup.com/en-AU/SecTalks-Brisbane/
