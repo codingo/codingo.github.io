@@ -135,14 +135,12 @@ if __name__ == '__main__':
         print('destination: ' + match.group(2))
 {% endhighlight %}
 
-I hope this helped you to better understand integer overflows. If you're Brisbane based, or find yourself here be sure to check out [SecTalks][sectalks].
-
 ![Impossible Math Boilerplate Execution]({{ site.url }}/assets/2017-03-08-Impossible-Math-Writeup/BoilerPlateExec.png)
 
 Great! We now have what we need in a variable. Referring back to our formula above, we now need to calculate:
 
 ![Impossible Math Formula]({{ site.url }}/assets/2017-03-08-Impossible-Math-Writeup/VerboseVariables.png)
 
-
+I hope this helped you to better understand integer overflows. If you're Brisbane based, or find yourself here be sure to check out [SecTalks][sectalks].
 
 [sectalks]: https://www.meetup.com/en-AU/SecTalks-Brisbane/
