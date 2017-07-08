@@ -85,9 +85,57 @@ Splitting our variables out of the calculation is quite easy. They’re both pre
 
 ![Impossible Math Second Check]({{ site.url }}/assets/2017-03-08-Impossible-Math-Writeup/SecondCheck.png)
 
+We can use regular expressions to identify this packet stream from the equals sign, and then split our values out into capture groups using another expression. Putting this boilerplate together looks like the following:
+
+{% highlight python %}
+#!/usr/bin/python3
+ 
+import socket
+import re
+import operator
+import sys
+
+MAXBUF = 4096
+SENTINEL = 'flag'
+CTF_BOT = ('ctf.crikeycon.com', 43981)
 
 
-I hope this helped you to better understand integer overflows. If you're Brisbane based, or find yourself here be sure to check out [SecTalks][sectalks]
+if __name__ == '__main__':
+    client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    client.connect(CTF_BOT)
+
+    while True:
+        data = b''
+
+        # receive and store data
+        while True:
+            chunk = client.recv(MAXBUF)
+            data += chunk
+            if len(chunk) < MAXBUF:
+                break
+        
+        # store decoded data for future usage
+        decoded = data.decode('utf-8')
+        
+        # print out response packet
+        print(decoded)
+
+        # our flag contains flag{}, once it's revealed print received data and exit
+        if SENTINEL in decoded:
+            break
+
+        # skip loop until we see our X * Y = Z line
+        if not re.search('[=]', decoded):
+            continue
+
+        # select integers and store into capture groups
+        match = re.search('(\d+) = (\d+)', decoded)
+   
+        print('multiplier: ' + match.group(1))
+        print('destination: ' + match.group(2))
+{% endhighlight %}
+
+I hope this helped you to better understand integer overflows. If you're Brisbane based, or find yourself here be sure to check out [SecTalks][sectalks].
 
 
 
