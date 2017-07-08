@@ -16,7 +16,16 @@ Before doing anything else on the host since we were provided with an unual port
 
 # Identifying the core problem
 Since the math is impossible there’s likely a trick here. With that in mind I figure we need to overload an operator (integer overflow) and try passing a large number as input:
+
 ![Impossible Math Overflow Check]({{ site.url }}/assets/2017-03-08-Impossible-Math-Writeup/OverflowCheck.png)
+
+Awesome! Our integer overloads by wrapping around. To gather a bit more information I also tried an integer underflow:
+
+![Impossible Math Underflow Check]({{ site.url }}/assets/2017-03-08-Impossible-Math-Writeup/UnderflowCheck.png)
+
+The same result. I now had to identify the figure we wrap around. These numbers are a bit irritatingly long to work with so I tried something a bit smaller to see if I could something more manageable:
+
+![Impossible Math Manageable Numbers]({{ site.url }}/assets/2017-03-08-Impossible-Math-Writeup/ManageableNumbers.png)
 
 
 
