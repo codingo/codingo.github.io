@@ -5,12 +5,12 @@ date:   2017-03-08 17:10:58 +1000
 categories: ctf writeup programming
 ---
 ```***Category:*** Coding
-***Points:*** 400
-***Solves:*** 7
-***Description:***  ctf.crikeycon.com:43981```
+Points: 400
+Solves: 7
+Description:  ctf.crikeycon.com:43981```
 
 # Enumeration
-Before doing anything else on this host I attempted to ncat to it, receiving the following:
+Before doing anything else on the host since we were provided with an unual port and address I attempted to ncat to it, receiving the following:
 
 
 
