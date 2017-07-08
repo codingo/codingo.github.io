@@ -113,3 +113,48 @@ Cons:
 - Transaction risk.
 - Volatility risk.
 - Transaction fees.
+
+## Method 3: Triple Arbitrage
+
+Sometimes it is not a matter of buying apples at a low price and selling them at a premium elsewhere. Sometimes you buy apples to exchange for oranges and then exchange those oranges for bananas, which you then trade for apples again. Triple arbitrage takes advantage of price discrepancies amongst different trade-able objects. In this case it’s with the many currencies on major exchanges.
+
+It is unlikely (and much riskier) that anyone performs triple arbitrage without automated means, the barrier of entry is also much higher than the two previous methods with a single trading pair.
+
+Pros:
+
+- You can combine it with the two previous methods.
+- Less likely for common arbitrageurs to exploit these methods mean more opportunities.
+- If an exchange is particularly inefficient you might be able to do everything in one place.
+
+Cons:
+
+- Unfeasible without automated means.
+- Doing this with the “moving coins” method increases transaction risks & fees.
+- Doing this with the “waiting coins” method requires more capital.
+- More trading fees.
+
+While you might be able to use more than three pairs to trade, the possibilities of doing so diminish due to trading fees. We should carry on to the next question, which mitigates a risk that every method above has.
+
+## Method 4: Staying in stable currency
+
+You might have read the term “going long”, which is trader jargon for staying in a currency or investment no matter the short-term performance. If you believe bitcoin will continue to acquire value in the future, you are thinking in this same mindset – your investment is its own holdings, rather than taking advantage of a market discrepancy.
+
+But in the volatile world of crypto currency arbitrage, you might not necessarily want to go long with Bitcoin depending on your feelings of the market. The volatility for the five year old currency is high and any gains that you acquire from arbitrage are not stable. A mere ten percent gain or loss on the value of Bitcoin could double or destroy your gains from the arbitrage methods listed earlier in this article.
+
+By staying in a stable, government-backed currency such as the US dollar, you can meanwhile get into an exchange, trade for your profit, and get out. Although you’ll be leaving the cryptocurrency market and entering charted, safer waters, there will be much more scrutiny on fees, waiting periods and other financial regulations
+
+Pros:
+
+- You can incorporate this philosophy into every method.
+- Much more stable than playing the market.
+
+Cons:
+
+- No opportunity for short selling and gains.
+- Fees from exchanges to and from fiat currencies
+
+There surely are variations and increasingly complex ways of conducting arbitrage, for instance instead of triple-arbitrage, quadruple and quintuple-arbitrage. These ways exposed here, and their resulting combinations, should be enough to describe what’s accessible to most bitcoin traders worldwide.
+
+## Conclusions
+
+These methods listed above are, at a glance, how to approach arbitrage with Bitcoin and other cryptocurrencies on the market. In my opinion, the landscape for arbitraging is not easy – Take it from someone who thought it would be profitable and went through the effort of developing software exactly for arbitrage. I could be proven wrong, but I would need to see data to believe it; just as I needed data to conclude the great risk of arbitrage at this time.
