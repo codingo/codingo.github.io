@@ -79,4 +79,16 @@ if __name__ == '__main__':
         client.send(data)
 {% endhighlight %}
 
-  
+# Regular Expression (attempt)
+The most important line here was the regex which consisted of the following (see if you can spot the mistake!):
+
+{% higlight python %}
+match = re.search('[^\:\s]\d+.{3}\d+', decoded)
+{% endhighlight %}
+
+This would skip everything proceeding the colon and whitespace and then group both sets of numbers, and the whitespace/operator between them for evaluation.
+
+The response to this was the following:
+
+ ![FastMath Regex First Attempt]({{ site.url }}/assets/2017-03-08-FastMath-Writeup/FirstRegexResponse.png)
+
