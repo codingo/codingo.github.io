@@ -77,8 +77,7 @@ if __name__ == '__main__':
         data = str(result).encode('utf-8') + b'\n'
         print('Sending: ' + str(result))
         client.send(data)
-
-{% endhighlight %}
+{% end highlight %}
 
 # Regular Expression (attempt)
 The most important line here was the regex which consisted of the following (see if you can spot the mistake!):
