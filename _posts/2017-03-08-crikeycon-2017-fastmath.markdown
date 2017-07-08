@@ -111,4 +111,12 @@ I resolved this by continuing back to the beginning of my loop if there wasn’t
 {% highlight python %}
 if not re.search('[-+/*]', decoded):
     continue
-{% endhighlight %} 
+{% endhighlight %}
+
+# Updating regular expression to handle more than one digit
+
+This got me to question number 10 – at which point I realized that my regex from earlier:
+
+{% highlight python %}
+match = re.search('[^\:\s]\d+.{3}\d+', decoded)
+{% endhighlight %}
