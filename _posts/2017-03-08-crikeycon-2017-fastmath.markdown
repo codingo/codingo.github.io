@@ -94,3 +94,10 @@ The response to this was the following:
 
 I spent far more time on this part of the challenge than I care to admit. I didn’t entirely read my logs and spent my time stuck on the two lines where I have Sending `1766845` and the response `459060` is _not correct_ and put a lot of focus into trying to identify why a different response was being sent to what was calculated (not the truth, but it’s what I was thinking).
 
+# Adding further regular expressions to catch x=x
+Eventually I identified that the response to an answer was:
+
+```
+AnswerProvided is correct
+AnswerProvided = AnswerProvided
+```
