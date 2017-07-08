@@ -86,8 +86,30 @@ Pros:
 
 - No transaction risk.
 - No transaction fees.
+
 Cons:
 
 - The Volatility risk.
 - Requires much more money on hands.
 - Idle coins waiting for opportunity earn no return for you.
+
+If you are keen on taking transaction risks, you might as well perform the second arbitraging method.
+
+## Method 2: Moving coins
+
+This is what everybody thinks when they first learn about crypto currency arbitrage. You buy cheaply on Exchange A and then you sell it at a higher price on Exchange B. There’s not much more than that, and that is why the barrier of entry is so low for this method; which means more arbitrageurs, and less opportunities for everyone.
+
+Transaction risk is the biggest here, as explained above there’s no guarantee that certain exchanges will allow you to make use of your funds as readily as you would like to. Also, this does not mitigate the volatility risk you will incur by holding cryptocurrencies. This may change though in the future with cryptocurrencies as they stabilize.
+
+Pros:
+
+- It’s relatively easy to do.
+- No transaction fees.
+- No idle coins waiting for opportunity.
+
+Cons:
+
+- It’s easy enough for everyone to do.
+- Transaction risk.
+- Volatility risk.
+- Transaction fees.
