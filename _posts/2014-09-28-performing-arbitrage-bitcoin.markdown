@@ -22,7 +22,7 @@ Arbitrage requires both skill and strategic thought. While “simple” arbitrag
 
 This is a game that begins with observation and measurement of the market as the arbitrageur must, at all times, be observant of the price difference in the goods he intends to acquire and sell. The markets move and what was an opportunity before can become quite the opposite in the future; an arbitrageur must hedge the risks he or she takes while doing their business.
 
-Arbitrage in the Bitcoin Economy
+# Arbitrage in the Bitcoin Economy
 
 Certainly there’s room for arbitrage with Bitcoin, but hold your enthusiasm; the golden age of bitcoin arbitrage has ended long ago. In 2014, there are no 30 percent ROI opportunities like in the MtGox days. The essence of current arbitrage remains the same, but the opportunities however are different.
 
