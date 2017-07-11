@@ -23,7 +23,7 @@ First navigate to the synchronization page which shows you incoming and outgoing
 
 You then want to perform a ```git status``` command to confirm that you have outstanding changes to pull from the current branch.
 
-  ![Git Status]({{ site.url }}/assets/2014-05-27-Conflict-Prevents-Checkout/Git-Status.png)
+![Git Status]({{ site.url }}/assets/2014-05-27-Conflict-Prevents-Checkout/Git-Status.png)
   
 In a number of cases this will reflect that there's no actualy conflict present.
 
