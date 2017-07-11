@@ -21,4 +21,10 @@ First navigate to the synchronization page which shows you incoming and outgoing
 
 ![Git pull conflict]({{ site.url }}/assets/2014-05-27-Conflict-Prevents-Checkout/Git-Sync-Window.png)
 
+You then want to perform a ```git status``` command to confirm that you have outstanding changes to pull from the current branch.
 
+  ![Git Status]({{ site.url }}/assets/2014-05-27-Conflict-Prevents-Checkout/Git-Status.png)
+  
+In a number of cases this will reflect that there's no actualy conflict present.
+
+If this is th case then do a git pull to manually pulldown the latest commits to the branch to your local repository. In order to do successfully perform a pull request you will also need to enter alternative access credentials. If you don’t already have these (or know them) then logging into your Visual Studio Online page, managing your profile (top right) and setting them on Security will create the credentials you need whenever using git from the console window.
