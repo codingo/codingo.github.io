@@ -14,14 +14,13 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Codingo 
-email: michael@codingo.com.au 
+email: codingo@protonmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Australian Software Developer with an emphasis on security. Always trying to learn how to break stuff so I can better duct tape my own designs together.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: codingo_ 
 github_username:  codingo
-linkedin_username: skeltonm
 google_analytics: UA-48564514-3 
 
 # Build settings
