@@ -19,7 +19,7 @@ description: > # this means to ignore newlines until "baseurl:"
   Australian Software Developer with an emphasis on security. Always trying to learn how to break stuff so I can better duct tape my own designs together.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: codingo_ 
+# twitter_username: codingo_ 
 github_username:  codingo
 google_analytics: UA-48564514-3 
 
