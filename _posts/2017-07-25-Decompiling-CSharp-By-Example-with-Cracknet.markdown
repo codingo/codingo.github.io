@@ -47,5 +47,13 @@ We can then relocate our key decrytion to the beginning of the method and commen
 
 ![dnSpy Decompile Main]({{ site.url }}/assets/2017-07-25-CrackNet/7-PatchedCode.PNG)
 
+We then tell dnSpy that we want to debug our modified application to be presented with the flag:
+
+![dnSpy Decompile Main]({{ site.url }}/assets/2017-07-25-CrackNet/8-DebugAssembly.PNG)
+
+And wala!
+
+![dnSpy Decompile Main]({{ site.url }}/assets/2017-07-25-CrackNet/9-FlagReveal.PNG)
+
 [cracknetrepo]: https://github.com/codingo/cracknet
 [dnSpy]: https://github.com/0xd4d/dnSpy
