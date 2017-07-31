@@ -48,6 +48,45 @@ We can then relocate our key decrytion to the beginning of the method and commen
 
 ![dnSpy Decompile Main]({{ site.url }}/assets/2017-07-25-CrackNet/7-PatchedCode.PNG)
 
+The relevant patched code is as follows:
+
+{% highlight csharp %}
+static void Main(string[] args)
+{
+    Debug.WriteLine("flag{Not a real flag. Strings would be too easy");
+    Program.PrintBanner();
+    int guesses = 5;
+    Console.WriteLine(string.Format("Success! Flag: {0}!", Crypto.DecryptStringAES("EAAAAB+ljfnegBraKanx/SJLBfrGhIDfffz8MOc922hrm0aK44KwgXmu9GHrIU+LjyBwmQ==")));
+    /*			
+    while (true)
+    {
+        bool flag = guesses < 1;
+        if (flag)
+        {
+            Program.PrintGameOver();
+        }
+        Program.PrintTimer(3);
+        Program.PrintGuesses(guesses);
+        Console.Write("Enter password: ");
+        string input = Console.ReadLine();
+        string password = Crypto.DecryptStringAES("EAAAAOkz8XiBpPhe0j3CnxGt4D5Qb0H2vh9/IeXrt1w4r313");
+        bool flag2 = input != null && input.ToLower().Equals(password);
+        if (flag2)
+        {
+            Console.WriteLine(string.Format("Success! Flag: {0}!", Crypto.DecryptStringAES("EAAAAB+ljfnegBraKanx/SJLBfrGhIDfffz8MOc922hrm0aK44KwgXmu9GHrIU+LjyBwmQ==")));
+            Program.StarWars();
+            Environment.Exit(0);
+        }
+        int num = guesses;
+        guesses = num - 1;
+        Console.WriteLine("Incorrect! Please wait to try again.");
+        Console.Beep(350, 250);
+        Console.Beep(300, 500);
+    }
+    */
+    .. remainder redacted ..
+{% endhighlight %}
+
 ## Debug and reveal the flag
 We then tell dnSpy that we want to debug our modified application to be presented with the flag:
 
