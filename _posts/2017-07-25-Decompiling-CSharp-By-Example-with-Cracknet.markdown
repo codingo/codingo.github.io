@@ -39,6 +39,7 @@ We then want to navigate to the main entry point of our application so we can un
 
 ![dnSpy Decompile Main]({{ site.url }}/assets/2017-07-25-CrackNet/5-DecompileMain.PNG)
 
+## Patching the application
 Looking at the code we can see that the instruction for decrypting the flag can only be reached by entering the result of the decryption (the flag). At this point we could take the Crypto class in this project along with the AES key however it's far more ideal if we instead patch our binary to bypass the instruction. To do this we first need to select __Edit Method__ in dnSpy (found in the right click menu):
 
 ![dnSpy Decompile Main]({{ site.url }}/assets/2017-07-25-CrackNet/6-EditMethod.png)
@@ -47,6 +48,7 @@ We can then relocate our key decrytion to the beginning of the method and commen
 
 ![dnSpy Decompile Main]({{ site.url }}/assets/2017-07-25-CrackNet/7-PatchedCode.PNG)
 
+## Debug and reveal the flag
 We then tell dnSpy that we want to debug our modified application to be presented with the flag:
 
 ![dnSpy Decompile Main]({{ site.url }}/assets/2017-07-25-CrackNet/8-DebugAssembly.PNG)
