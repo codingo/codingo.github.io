@@ -23,10 +23,29 @@ This wait time eliminates the ability to brute force the flag and after five inc
 
 ![CrackNet GameOver]({{ site.url }}/assets/2017-07-25-CrackNet/3-Cracknet-GameOver.PNG)
 
-# Decompiling
-Much like Java C# is for the most part an interpretted language. Source code written in C# is compiled into an intermediate language (IL) that according to the CLI specification. When the C# program is executed, the assembly is loaded into the CLR, which might take various actions based on the information in the manifest. Then, if the security requirements are met, the CLR performs just in time (JIT) compilation to convert the IL code to native machine instructions.
+# Decompiling with dnSpy
+## Why and what is dnSpy?
+Much like Java C# is for the most part an interpretted language. Source code written in C# is compiled into an intermediate language (IL) according to the CLI specification. When a C# program is executed, the assembly is loaded into the CLR, then, if all security requirements are met, the CLR performs just in time (JIT) compilation to convert the IL code to native machine instructions.
 
-This brings in a fantistic Github project - [dnSpy]. [dnSpy] is a tool to reverse engineer .NET assemblies. It includes a decompiler, a debugger and an assembly editor.
+This brings in a fantistic Github project - [dnSpy]. [dnSpy] is a tool to reverse engineer .NET assemblies. It includes a decompiler, a debugger and an assembly editor that allows your to modify or debug .Net applications as required.
+
+## Loading the project
+After cloning the dnSpy repository and opening the project you will be presented with something similar to the following:
+
+![dnSpy initial load]({{ site.url }}/assets/2017-07-25-CrackNet/4-dnSpy.PNG)
+
+## Navigate to main
+We then want to navigate to the main entry point of our application so we can understand what's happening:
+
+![dnSpy Decompile Main]({{ site.url }}/assets/2017-07-25-CrackNet/5-DecompileMain.PNG)
+
+Looking at the code we can see that the instruction for decrypting the flag can only be reached by entering the result of the decryption (the flag). At this point we could take the Crypto class in this project along with the AES key however it's far more ideal if we instead patch our binary to bypass the instruction. To do this we first need to select __Edit Method__ in dnSpy (found in the right click menu):
+
+![dnSpy Decompile Main]({{ site.url }}/assets/2017-07-25-CrackNet/6-EditMethod.png)
+
+We can then relocate our key decrytion to the beginning of the method and comment out the remaining code. If we only move the key decryption and don't comment out the remaining code our key will be overwritten as the screen is redrawn for the timer.
+
+![dnSpy Decompile Main]({{ site.url }}/assets/2017-07-25-CrackNet/7-PatchedCode.PNG)
 
 [cracknetrepo]: https://github.com/codingo/cracknet
 [dnSpy]: https://github.com/0xd4d/dnSpy
