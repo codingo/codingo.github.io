@@ -13,9 +13,8 @@ Although it's possible to complete this challenge by bypassing a JMP instruction
 # The initial load
 When you first open CrackNet you're presented with the following:
 
-[firstload]
+![CrackNet First Load]({{ site.url }}/assets/2017-07-25-CrackNet/1-CrackNet-FirstLoad.PNG)
 
 
 
 [cracknetrepo]: https://github.com/codingo/cracknet
-[firstload]: https://github.com/codingo/codingo.github.io/blob/master/assets/2017-07-25-CrackNet/1-CrackNet-FirstLoad.PNG
