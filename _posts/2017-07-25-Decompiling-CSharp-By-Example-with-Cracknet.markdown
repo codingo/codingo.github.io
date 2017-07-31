@@ -10,7 +10,7 @@ Back in May Brisbane SecTalks ran a capture the flag event where members of SecT
 
 Although it's possible to complete this challenge by bypassing a JMP instruction in assembly the intention of this challenge was to introduce participants to decompiling .Net applications by patching the application.
 
-# The initial load
+# Exploring CrackNet functionality
 When you first open CrackNet you're presented with the following:
 
 ![CrackNet First Load]({{ site.url }}/assets/2017-07-25-CrackNet/1-CrackNet-FirstLoad.PNG)
@@ -23,5 +23,10 @@ This wait time eliminates the ability to brute force the flag and after five inc
 
 ![CrackNet GameOver]({{ site.url }}/assets/2017-07-25-CrackNet/3-Cracknet-GameOver.PNG)
 
+# Decompiling
+Much like Java C# is for the most part an interpretted language. Source code written in C# is compiled into an intermediate language (IL) that according to the CLI specification. When the C# program is executed, the assembly is loaded into the CLR, which might take various actions based on the information in the manifest. Then, if the security requirements are met, the CLR performs just in time (JIT) compilation to convert the IL code to native machine instructions.
+
+This brings in a fantistic Github project - [dnSpy]. [dnSpy] is a tool to reverse engineer .NET assemblies. It includes a decompiler, a debugger and an assembly editor.
 
 [cracknetrepo]: https://github.com/codingo/cracknet
+[dnSpy]: https://github.com/0xd4d/dnSpy
