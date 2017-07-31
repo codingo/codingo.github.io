@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Decompiling C# by Examle with Cracknet"
+title:  "Decompiling C# by Example with Cracknet"
 date:   2017-07-25 17:01:58 +1000
 categories: reverse-engineering ctf
 ---
