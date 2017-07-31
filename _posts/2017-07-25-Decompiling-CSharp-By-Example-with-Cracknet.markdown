@@ -25,9 +25,9 @@ This wait time eliminates the ability to brute force the flag and after five inc
 
 # Decompiling with dnSpy
 ## Why and what is dnSpy?
-Much like Java C# is for the most part an interpretted language. Source code written in C# is compiled into an intermediate language (IL) according to the CLI specification. When a C# program is executed, the assembly is loaded into the CLR, then, if all security requirements are met, the CLR performs just in time (JIT) compilation to convert the IL code to native machine instructions.
+C# is a "jittable" langauge in that it's not compiled purely down to machine code like C is, however it's also not completely interpretted like Python is. C# holds the middle ground and source code written is compiled into an intermediate language (IL) according to the CLI specification. When a C# program is executed, the assembly is loaded into the CLR, then, if all security requirements are met, the CLR performs just in time (JIT) compilation to convert the IL code to native machine instructions.
 
-This brings in a fantistic Github project - [dnSpy]. [dnSpy] is a tool to reverse engineer .NET assemblies. It includes a decompiler, a debugger and an assembly editor that allows your to modify or debug .Net applications as required.
+This brings in a fantistic Github project - [dnSpy]. [dnSpy] is a tool to reverse engineer .NET assemblies from their CLI state back to somewhat interprettable and editable code. It includes a decompiler, a debugger and an assembly editor that allows your to modify or debug .Net applications as required.
 
 ## Loading the project
 After cloning the dnSpy repository and opening the project you will be presented with something similar to the following:
