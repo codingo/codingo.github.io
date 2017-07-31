@@ -55,7 +55,7 @@ static void Main(string[] args)
 {
     Debug.WriteLine("flag{Not a real flag. Strings would be too easy");
     Program.PrintBanner();
-    int guesses = 5;
+    //int guesses = 5;
     Console.WriteLine(string.Format("Success! Flag: {0}!", Crypto.DecryptStringAES("EAAAAB+ljfnegBraKanx/SJLBfrGhIDfffz8MOc922hrm0aK44KwgXmu9GHrIU+LjyBwmQ==")));
     /*			
     while (true)
