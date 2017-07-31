@@ -88,13 +88,11 @@ static void Main(string[] args)
 {% endhighlight %}
 
 ## Debug and reveal the flag
-We then tell dnSpy that we want to debug our modified application to be presented with the flag:
-
-![dnSpy Decompile Main]({{ site.url }}/assets/2017-07-25-CrackNet/8-DebugAssembly.PNG)
-
-And wala!
+We then tell dnSpy that we want to debug our modified application to be presented with the flag
 
 ![dnSpy Decompile Main]({{ site.url }}/assets/2017-07-25-CrackNet/9-FlagReveal.PNG)
+
+And wala!
 
 [cracknetrepo]: https://github.com/codingo/cracknet
 [dnSpy]: https://github.com/0xd4d/dnSpy
