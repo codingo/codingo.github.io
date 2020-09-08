@@ -20,6 +20,8 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://codingo.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: codingo_ 
 github_username:  codingo
+youtube_username: codingo
+facebook_username: codingo
 google_analytics: UA-48564514-6
 
 # Build settings
