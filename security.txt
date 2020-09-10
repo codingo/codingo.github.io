@@ -1,0 +1,3 @@
+Contact: codingo@protonmail.com
+Preferred-Languages: en
+Canonical: https://codingo.io/security.txt
