@@ -442,10 +442,6 @@ Much like the Clusterbomb approach, I've found the Pitchfork style of fuzzing is
 As you can see when compared to the clusterbomb atack, the pitchfork attack works the wordlists in series. Not all combinations will be reached, but the use case for these is that they aren't intended to and doing so would be a waste of requests.
 
 # Handling Output
-## Standard Output
-### InsiderPHD Tool
-
-
 ## HTML Output
 
 ## Using Silent and Tee
