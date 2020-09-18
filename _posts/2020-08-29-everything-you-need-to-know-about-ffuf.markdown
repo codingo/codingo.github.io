@@ -260,6 +260,30 @@ ffuf -u https://W2.io/W1 -w ./wordlist.txt:W1, ./domains.txt:W2
 
 This would scan each of the domains in our `domains.txt` files using the wordlist from `wordlist.txt`, allowing us to run at scale without needing the use of outside scripting or applications.
 
+The order of the wordlists control in what order the requests are sent. In clusterbomb mode (default) ffuf will iterate over the entire first wordlist before moving on to the second item in the second wordlist.
+
+Why does this matter you wonder? Let me give you an example:
+
+Lets say we have a wordlist with 1000 domains `domains.txt` and a wordlist with 1000 directories `wordlist.txt`.
+
+If we run:
+```
+ffuf -u https://FUZZDOMAIN/FUZZDIR -w ./wordlist.txt:FUZZDIR, ./domains.txt:FUZZDOMAIN
+```
+
+ffuf will try every directory for the first domain, then every directory on the second domain.
+When running with many threads, this means sending 1000 requests to the same server in a very short amount of time. 
+This often leads to getting rate-limited or banned.
+
+If we on the other hand swap the order of the wordlists and run:
+```
+ffuf -u https://FUZZDOMAIN/FUZZDIR -w ./domains.txt:FUZZDOMAIN, ./wordlist.txt:FUZZDIR 
+```
+
+ffuf will try the first directory on all domains, before moving on to the next directory and trying that on all domains.
+This way you can send more requests without overloading the target servers.
+
+
 ## Wordlist Parameter Bug
 
 In older versions of FFUF there is a bug here whereby the `w` flag needs to be made use of multiple times for this to work as intended. If you receive the error:
