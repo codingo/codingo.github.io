@@ -2,9 +2,8 @@
 layout: post
 title:  "Everything you need to know about FFUF"
 date:   2020-09-17 17:01:58 +1000
-categories: ctf writeup programming crikeycon
+categories: tools ffuf bounty
 ---
-
 
 # Table of Contents
 - [Other Sources / Credit](#other-sources---credit)
@@ -269,7 +268,6 @@ Then you should instead either upgrade FFUF to the latest version, or use the `w
 
 ```
 ffuf -u https://W2.io/W1 -w ./wordlist.txt:W1 -w ./domains.txt:W2
-
 ```
 
 More information can be found here: https://github.com/ffuf/ffuf/issues/290
@@ -312,7 +310,6 @@ ________________________________________________
  :: Threads          : 40
  :: Matcher          : Response status: 200,204,301,302,307,401,403
 ________________________________________________
-
 ```
 
 and the footer:
@@ -406,7 +403,6 @@ First connect to your remote VPS over SSH server using:
 
 ```
 ssh -R 8888:localhost:8080 user@remotevps
-
 ```
 
 And then run FFUF with the following:
