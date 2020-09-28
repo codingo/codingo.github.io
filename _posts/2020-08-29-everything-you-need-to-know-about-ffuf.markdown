@@ -516,3 +516,5 @@ The following authors have contributed to this guide:
 | Date        | Contributor | Twitter                      | Description                 |
 |-------------|-------------|------------------------------|-----------------------------|
 | 17 Sep 2020 | codingo     | [https://twitter.com/codingo_](https://twitter.com/codingo_) | Initial Draft / Publication |
+| 28 Sep 2020 | p4fg     | N/A | Added additional hints on fuzzing multiple domains |
+
