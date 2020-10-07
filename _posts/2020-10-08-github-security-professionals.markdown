@@ -9,6 +9,8 @@ Every Month if [Hacktoberfest](https://hacktoberfest.digitalocean.com/), which, 
 
 The intention of this guide is to arm you with the knowledge of how you can get involved, even if you're not entirely familiar with programming, or if you are, and you want a reference point for "how to github" - I'm aiming for this to land with both.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/AQEOz5zbW4w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 # Table of Contents
 - [What is Github?](#what-is-github-)
   * [But what is Git?](#but-what-is-git-)
