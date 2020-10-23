@@ -255,7 +255,7 @@ ffuf -u https://codingo.io/W1 -w ./wordlist.txt:W1
 This runs the same scan as our previous example, except `W1` is now our insert instead of `FUZZ`. Now, let's assume that instead of `codingo.io` we had identified multiple websites we wanted to check over at the same time. For that, we could create a wordlist of all of the domains we wanted to test, and use the following:
 
 ```
-ffuf -u https://W2.io/W1 -w ./wordlist.txt:W1, ./domains.txt:W2
+ffuf -u https://W2/W1 -w ./wordlist.txt:W1,./domains.txt:W2
 ```
 
 This would scan each of the domains in our `domains.txt` files using the wordlist from `wordlist.txt`, allowing us to run at scale without needing the use of outside scripting or applications.
@@ -268,7 +268,7 @@ Lets say we have a wordlist with 1000 domains `domains.txt` and a wordlist with 
 
 If we run:
 ```
-ffuf -u https://FUZZDOMAIN/FUZZDIR -w ./wordlist.txt:FUZZDIR, ./domains.txt:FUZZDOMAIN
+ffuf -u https://FUZZDOMAIN/FUZZDIR -w ./wordlist.txt:FUZZDIR,./domains.txt:FUZZDOMAIN
 ```
 
 ffuf will try every directory for the first domain, then every directory on the second domain.
@@ -277,7 +277,7 @@ This often leads to getting rate-limited or banned.
 
 If we on the other hand swap the order of the wordlists and run:
 ```
-ffuf -u https://FUZZDOMAIN/FUZZDIR -w ./domains.txt:FUZZDOMAIN, ./wordlist.txt:FUZZDIR 
+ffuf -u https://FUZZDOMAIN/FUZZDIR -w ./domains.txt:FUZZDOMAIN,./wordlist.txt:FUZZDIR 
 ```
 
 ffuf will try the first directory on all domains, before moving on to the next directory and trying that on all domains.
@@ -293,10 +293,10 @@ Encountered error(s): 1 errors occurred.
 * Keyword W1, defined, but not found in headers, method, URL or POST data.
 ```
 
-Then you should instead either upgrade FFUF to the latest version, or use the `w` flag muiltiple times, like so:
+Then you should instead either upgrade FFUF to the latest version, or use the `w` flag multiple times, like so:
 
 ```
-ffuf -u https://W2.io/W1 -w ./wordlist.txt:W1 -w ./domains.txt:W2
+ffuf -u https://W2/W1 -w ./wordlist.txt:W1 -w ./domains.txt:W2
 ```
 
 More information can be found here: https://github.com/ffuf/ffuf/issues/290
