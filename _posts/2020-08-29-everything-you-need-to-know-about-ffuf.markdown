@@ -398,13 +398,13 @@ In some cases, however, you may be fuzzing for more complex bugs and want to fil
 # Filter and Matches
 As useful as matches are, filters being the inverse of matches can be just as, if not more useful. When returning the results of a page that has a sink (a location where your source, or wordlist item is reflected in the page) within the response, it can be more useful to filter the number of words in a page, rather than filter by content length. For this purpose, FFUF provides `fw`, or filter words. If you can identify the number of words commonly in the response, you can apply this filter to remove any results that have your content length. If words aren't specific enough, you can also filter on the number of lines within the HTTP response, using `fl`.
 
-Much like filters, you can also filter based on content length (`fc`) to remove response types from the results. This can be especially useful where you want to first filter for all defaults, which includes the `301` response code, and then filter this response code out from the results to see more specific responses.
+Much like matches, you can also filter based on content length (`fc`) to remove response types from the results. This can be especially useful where you want to first filter for all defaults, which includes the `301` response code, and then filter this response code out from the results to see more specific responses.
 
 # Sending FFUF scans via Burp Suite
 For a variety of reasons, you'll often find yourself wanting your FFUF scans to be sent via Burp Suite. Notably, there's a few ways to acomplish this goal, and it's important to understand each of them, and apply the right one for your use case.
 
 ## Locally, Using Replay Proxy
-FFUF has a command within it, `replay-proxy` to dictate. This will retoute successful commands (ones  that hit your matches, and not your filters) to Burp Suite proxy for further investigation. Notably, this does mean that you're doubling your requests, and this should be used in situations where it makes sense to do so.
+FFUF has a command within it, `replay-proxy` to dictate. This will reroute successful commands (ones  that hit your matches, and not your filters) to Burp Suite proxy for further investigation. Notably, this does mean that you're doubling your requests, and this should be used in situations where it makes sense to do so.
 
 If for whatever reason (such as engagement terms) you need to send all information via Burp Suite, and not just successful traffic, then you can instead use `x` which will replay all requests via a Burp Suite project, regardless of whether they line up with FFUF filters/matches or not.
 
@@ -485,7 +485,7 @@ ffuf -request /tmp/request.txt -w ./wordlist.txt -s | tee ./output.txt
 Would output to the console and write to output.txt. This is a useful trick for a number of tools, including those that don't stream output, to allow you to see results in realtime, whilst also streaming them to a file.
 
 # Importing Requests
-On of the easiest ways to work with complex queries is to simply save the request you're working with from your intercepting proxy (such as Burp Suite), set your fuzzing paths, and then import it into FFUF for usage. You can do this with the `request` flag in FFUF, as explained below.
+One of the easiest ways to work with complex queries is to simply save the request you're working with from your intercepting proxy (such as Burp Suite), set your fuzzing paths, and then import it into FFUF for usage. You can do this with the `request` flag in FFUF, as explained below.
 
 Going back to our original fuzzing example, let's assume we visited codingo.io in Burp Suite, and we captured the following request:
 
@@ -517,4 +517,3 @@ The following authors have contributed to this guide:
 |-------------|-------------|------------------------------|-----------------------------|
 | 17 Sep 2020 | codingo     | [https://twitter.com/codingo_](https://twitter.com/codingo_) | Initial Draft / Publication |
 | 28 Sep 2020 | p4fg     | N/A | Added additional hints on fuzzing multiple domains |
-
