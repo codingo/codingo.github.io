@@ -225,7 +225,7 @@ ffuf -u https://codingo.io/FUZZ -w ./wordlist -recursion
 In this case, both items "admin" and a subpage under that "panel" were discovered.
 
 # Extensions
-Often when you find a directorty you're also going to want to look for file extensions of that. This can be invaluable for finding bugs when there's a zip file, or backup file of the same name.
+Often when you find a directory you're also going to want to look for file extensions of that. This can be invaluable for finding bugs when there's a zip file, or backup file of the same name.
 
 Extensions in FFUF are specified with the `e` parameter and are essentially suffixs to your wordlist (as not all extensions start with a `.`). For example, expanding upon our original scan with the following:
 
@@ -404,7 +404,7 @@ Much like filters, you can also filter based on content length (`fc`) to remove 
 For a variety of reasons, you'll often find yourself wanting your FFUF scans to be sent via Burp Suite. Notably, there's a few ways to acomplish this goal, and it's important to understand each of them, and apply the right one for your use case.
 
 ## Locally, Using Replay Proxy
-FFUF has a command within it, `replay-proxy` to dictate. This will retoute successful commands (ones  that hit your matches, and not your filters) to Burp Suite proxy for further investigation. Notably, this does mean that you're doubling your requests, and this should be used in situations where it makes sense to do so.
+FFUF has a command within it, `replay-proxy` to dictate. This will reroute successful commands (ones  that hit your matches, and not your filters) to Burp Suite proxy for further investigation. Notably, this does mean that you're doubling your requests, and this should be used in situations where it makes sense to do so.
 
 If for whatever reason (such as engagement terms) you need to send all information via Burp Suite, and not just successful traffic, then you can instead use `x` which will replay all requests via a Burp Suite project, regardless of whether they line up with FFUF filters/matches or not.
 
